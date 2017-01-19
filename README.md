@@ -1,9 +1,12 @@
 # hookfile
 微信抢红包dylib
 
+#脱壳
 
+直接从 xx助手 市场里下载越狱应用可用。
+用 dumpdecrypted 进行砸壳
 
-# 注入
+#注入
 
 如果是拿到 .ipa，进行解压即可找到 Payload 文件夹，可安装 iOSOpenDev 来创建工程，使用 CaptainHook 轻松方便写 Hook 代码。
 
@@ -20,3 +23,4 @@ yololib xxx.app/xxx LocationFaker.dylib
 #打包
 
 对 Payload 文件夹右键压缩，改名 xx.ipa 即可，推荐用 Xcode (Window->Device) 安装，失败还有错误信息可看。
+
