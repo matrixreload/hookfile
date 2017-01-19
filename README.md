@@ -13,8 +13,9 @@
 生成动态库(.dylib)后使用 yololib 工具进行注入，不知为何使用 [KJCracks/yololib] Release 中的 yololib-Mac 最终会在设备上闪退，
 使用 Urinx/iOSAppHook 则没有问题，一条命令对 .app 中的二进制进行 .dylib 注入，再把注入的 .dylib 拖到目录里即可。
 注入成功后可以用 MachOView 程序查看整个 MachO 文件的结构，便可看到注入的 dylib 会在 Load Commands 区段中。
-
+```
 yololib xxx.app/xxx LocationFaker.dylib
+```
 
 #重签名
 
@@ -24,3 +25,5 @@ yololib xxx.app/xxx LocationFaker.dylib
 
 对 Payload 文件夹右键压缩，改名 xx.ipa 即可，推荐用 Xcode (Window->Device) 安装，失败还有错误信息可看。
 
+<img src="./IMG_010.jpg" height=500 />
+<img src="./IMG_011.jpg" height=500 />
